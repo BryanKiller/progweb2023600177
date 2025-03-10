@@ -1,6 +1,6 @@
 <?php
 // evitamos el 0
-$x = $_GET['x'];
+$x = $_GET['x'] ? (float)$_GET['x'] : 1;
 
 // Calcular el numerador y denominador de la expresión
 $arriba = ($x ** 2 / 2) + (1 / sqrt($x));
