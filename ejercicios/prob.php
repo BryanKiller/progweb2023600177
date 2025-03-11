@@ -28,23 +28,23 @@ $resultadoE = sqrt($arribaE / $abajoE);
 
 <html>
 <head>
-    <title>Cálculo de Expresiones Matemáticas</title>
+    <title>Calculo de Expresiones Matematicas</title>
 </head>
 <body>
-    <h2 style="text-align: center;">Cálculo de Expresiones Matemáticas</h2>
+    <h2 style="text-align: center;">Calculo de Expresiones Matematicas</h2>
     
     <h3 style="text-align: center;">Resultados</h3>
     <ul style="text-align: center; list-style: none;">
     <img src="A.jpg" alt="formula" style="display: block; margin: auto;">
-        <li><b>Ejercicio A:</b> <?php echo number_format($resultadoA, 4); ?></li><br>
+        <li><b>Ejercicio A:</b> <?php echo $resultadoA; ?></li><br>
         <img src="B.jpg" alt="formula" style="display: block; margin: auto;">
-        <li><b>Ejercicio B:</b> <?php echo number_format($resultadoB, 4); ?></li><br>
+        <li><b>Ejercicio B:</b> <?php echo $resultadoB; ?></li><br>
         <img src="C.jpg" alt="formula" style="display: block; margin: auto;">
-        <li><b>Ejercicio C:</b> <?php echo number_format($resultadoC, 4); ?></li><br>
+        <li><b>Ejercicio C:</b> <?php echo $resultadoC; ?></li><br>
         <img src="D.jpg" alt="formula" style="display: block; margin: auto;">
-        <li><b>Ejercicio D:</b> <?php echo number_format($resultadoD, 4); ?></li><br>
+        <li><b>Ejercicio D:</b> <?php echo $resultadoD; ?></li><br>
         <img src="E.jpg" alt="formula" style="display: block; margin: auto;">
-        <li><b>Ejercicio E:</b> <?php echo number_format($resultadoE, 4); ?></li>
+        <li><b>Ejercicio E:</b> <?php echo $resultadoE; ?></li>
         
     </ul>
 </body>
