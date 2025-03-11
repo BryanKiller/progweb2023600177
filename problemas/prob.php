@@ -1,6 +1,6 @@
 <?php
-$x = isset($_GET['x']) ? (float)$_GET['x'] : 1;
-$y = isset($_GET['y']) ? (float)$_GET['y'] : 1;
+$x = $_GET['x'] ? (float)$_GET['x'] : 1;
+$y = $_GET['y'] ? (float)$_GET['y'] : 1;
 
 // Ejercicio A
 $resultadoA = (1 / $x) + (($x + $y) / 3) + 2 * ($x / $y);
