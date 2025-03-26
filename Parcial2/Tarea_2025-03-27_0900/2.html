@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murcielago</title>
+</head>
+<body>
+    <script>
+        const n = "murcielago";
+
+        const vocales = ['a', 'e', 'i', 'o', 'u'];
+        let numVocales = 0;
+        let numConsonantes = 0;
+
+        for(let letra of n){
+            if (vocales.includes(letra.toLowerCase())){
+                numVocales++;
+            }else if (letra.match(/[a-z]/i)){
+                numConsonantes++;
+            }
+        }
+        document.writeln("<strong>Palabra:</strong> " + n + "<br>");
+        document.writeln("<strong>Número de vocales:</strong> " +  numVocales + "<br>");
+        document.writeln("<strong>Número de consonantes:</strong> " + numConsonantes);
+
+        function idioma(texto){
+            let resultado = ""; 
+            for(let letra of texto){
+                if (vocales.includes(letra.toLowerCase())){
+                    resultado += letra + "f" + letra;
+                }else{
+                    resultado += letra;
+                }
+            }
+            return resultado
+        }
+        const resultado = idioma(n);
+        document.writeln("<br><strong> Texto en idioma EFE: </strong>" + resultado);
+        </script>
+        
+</body>
+</html>

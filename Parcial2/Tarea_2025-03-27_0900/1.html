@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>numeros</title>
+</head>
+<body>
+    <script>
+        let suma = 0;
+        for(let n=1;n<=200;n++){
+            let numeros = n*2;
+            document.writeln(numeros + ", ");
+            suma += numeros;
+        }
+        let promedio = suma/200;
+        document.writeln("<br> El promedio es: " + promedio);
+        document.writeln("<br> Todos los numeros se repiten la misma vez")
+        document.writeln("<br> la mediana es: " + suma/200);
+    </script>
+</body>
+</html>
