@@ -7,7 +7,7 @@
         let meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
         let ordinales = ["1ro", "2do", "3ro", "4to", "5to", "6to", "7mo", "8vo", "9no", "10mo", "11vo", "12vo"];
 
-        function buscarMes(event) {            
+        function buscarMes() {            
             let numMes = parseInt(document.getElementById("txtMes").value);
             
             if (numMes >= 1 && numMes <= 12) {
@@ -19,10 +19,10 @@
 </head>
 <body>
     <form>
-        <label>Número del mes (1 a 12):</label>
+        <label>Numero del mes (1 a 12):</label>
         <input id="txtMes">
         <br>
-        <button onclick="buscarMes(event)">Mostrar</button>
+        <button onclick="buscarMes()">Mostrar</button>
     </form>
 </body>
 </html>
