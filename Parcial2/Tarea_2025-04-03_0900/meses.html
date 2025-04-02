@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Meses</title>
+    <script>
+        let meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+        let ordinales = ["1ro", "2do", "3ro", "4to", "5to", "6to", "7mo", "8vo", "9no", "10mo", "11vo", "12vo"];
+
+        function buscarMes(event) {            
+            let numMes = parseInt(document.getElementById("txtMes").value);
+            
+            if (numMes >= 1 && numMes <= 12) {
+                let mensaje = "El mes es: " + meses[numMes - 1] + " con ordinales " + ordinales[numMes - 1];
+                alert(mensaje);
+            } 
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label>Número del mes (1 a 12):</label>
+        <input id="txtMes">
+        <br>
+        <button onclick="buscarMes(event)">Mostrar</button>
+    </form>
+</body>
+</html>

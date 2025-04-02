@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Numeros</title>
+    <script>
+        let todo = [1, 2, 3, "Bryan Entzana Vega", "es el", "mejor del mundo!!!!", false, true, false, true];
+
+        function numeros(){
+            let suma = todo[1] + todo[2] + todo[0];
+            alert(suma);
+        }
+
+        function cadena(){
+            let junta = todo[3] + todo[4] + todo[5];
+            alert(junta);
+        }
+
+        function booleanos(){
+            let and = true;
+            and = todo[6] && todo[7] && todo[8] && todo[9];
+            alert(and);
+        }
+
+    </script>
+</head>
+<body>
+    <form>
+        <button onclick="numeros()">Numeros</button>
+        <button onclick="cadena()">Cadena</button>
+        <button onclick="booleanos()">booleanos</button>
+    </form>
+</body>
+</html>
