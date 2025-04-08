@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>wasd</title>
+  <style>
+    .key {
+      width: 50px;
+      height: 50px;
+      background: gray;
+    }
+  </style>
+  <script>
+    function presion() {
+      if (["w", "a", "s", "d"].includes(event.key)) {
+        document.getElementById(event.key).style.background = "black";
+      }
+    }
+
+    function soltar() {
+      if (["w", "a", "s", "d"].includes(event.key)) {
+        document.getElementById(event.key).style.background = "gray";
+      }
+    }
+
+    document.addEventListener("keydown", function() {
+      fondox();
+      fondoz();
+    });
+
+    function fondox() {
+      if (event.key === "x") {
+        document.body.style.background = "green","blue","yellow"; 
+      }
+    }
+
+    function fondoz() {
+      if (event.key === "z") {
+        document.body.style.background = "";
+      }
+    }
+
+    document.addEventListener("keydown", presion);
+    document.addEventListener("keyup", soltar);
+  </script>
+</head>
+<body style="text-align: center;">
+  <div id="w" class="key">W</div>
+  <div id="a" class="key">A</div>
+  <div id="s" class="key">S</div>
+  <div id="d" class="key">D</div>
+  <div id="z" class="key" >Z</div>
+  <div id="x" class="key">X</div>
+</body>
+</html>
